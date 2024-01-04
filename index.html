@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Digital im Alter</title>
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+  </style>
+  <link rel="stylesheet" type="text/css" href="CSS/style-slideshow.css"/>
+  <link rel="stylesheet" href="CSS/style-index.css">
+  <link rel="stylesheet" href="CSS/style-list.css">
+  <link rel="stylesheet" href="CSS/style-rect.css">
+</head>
+<body>
+   <!-- navigation -->
+	<nav>
+	 <h1 class="logo"><span id="digital">Digital</span> im Alter</h1>
+	 <ul>
+		<li><a href="#" class="activeHome">Home</a></li>
+		<li><a href="#">Über uns</a></li>
+		<li><a href="#">Kontakt</a></li>
+	 </ul>
+	</nav>
+	
+	<!-- chart -->
+	<div id="chart">
+		<div id="rects"></div>
+		<div id="slideshows"></div>
+		<div id="lists"></div>
+	</div>
+	
+  <!-- data and topics -->
+   <script type="text/javascript" src="script/data.js"></script>
+   <script type="text/javascript" src="script/topics.js"></script>
+
+  <!-- create rectangles on the chart -->
+  <script type="text/javascript" src="script/rect.js" ></script>
+
+  <!-- create the slideshows -->
+  <script type="text/javascript" src="script/slideshow.js"></script>
+
+   <!-- open and close a slideshow -->
+   <script type="text/javascript" src="script/slideshowControl.js"></script>
+
+   <script type="text/javascript">
+       /** Starting point of the application */
+       function main(jsonData) {
+           categorizeQuestions(jsonData);
+           createRectangles(topics);
+           createTopicSlideshows(topics);
+       }
+       main(jsonData);
+   </script>
+
+</body>
+
+</html>

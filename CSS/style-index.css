@@ -1,0 +1,405 @@
+/* import web fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* general browser style adjustment */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+/* navigation */
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #FAFAFB;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px -1px rgba(0,0,0,0.2);
+}
+
+nav .logo{
+  color: rgb(73,73,73);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#digital {
+	color: #5B3FF3;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(73,73,73);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: #5B3FF3;
+  border-bottom: solid 2px;
+}
+
+.activeHome {
+	color: #5B3FF3;
+}
+
+/* chart with rectangles and slideshows */
+
+#chart {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	zoom: 105%;
+	height: 630px;
+	width: 1020.15px;
+}
+
+/* media queries for the chart */
+
+@media (max-width: 1240px){
+	
+	#chart{
+		margin-top: 15px;
+		zoom: 104%;
+	}
+}
+
+@media (max-width: 1140px){
+	
+	#chart{
+		margin-top: 30px;
+		zoom: 103%;
+	}
+}
+
+@media (max-width: 1080px){
+	
+	#chart{
+		margin-top: 23px;
+		zoom: 102%;
+	}
+}
+
+@media (max-width: 1060px){
+	
+	#chart{
+		margin-top: 50px;
+		zoom: 95%;
+	}
+}
+
+@media (max-width: 1020px){
+	
+	#chart{
+		margin-top: 50px;
+		zoom: 94%;
+	}
+}
+
+@media (max-width: 995px){
+	
+	#chart{
+		margin-top: 70px;
+		zoom: 88%;
+	}
+}
+
+@media (max-width: 955px){
+	
+	#chart{
+		margin-top: 70px;
+		zoom: 88%;
+	}
+}
+
+@media (max-width: 940px){
+	
+	#chart{
+		margin-top: 70px;
+		zoom: 88%;
+		height: 800px;
+	}
+}
+
+@media (max-width: 925px){
+	
+	#chart{
+		margin-top: 70px;
+		zoom: 88%;
+	}
+}
+
+@media (max-width: 915px){
+	
+	#chart{
+		margin-top: 30px;
+		zoom: 80%;
+		height: 800px;
+	}
+	
+	.grid-container {
+	display: grid;
+	grid-template-rows: 840px;
+	grid-template-columns: 100%;
+	grid-template-areas: slider;
+		
+	}
+	
+	.SmartphonesRect {
+		height: 368px !important;
+	}
+	
+	.InternetRect {
+		height: 460.5px !important;
+		top: 378px !important;
+	}
+	
+	.SicherheitRect {
+		height: 270px !important;
+	}
+	
+	.GesundheitRect {
+		height: 270px !important;
+		top: 280px !important;
+	}
+	
+	.SozialRect {
+		height: 280px !important;
+		top: 560px !important;
+	}
+	
+	.AllgemeinRect {
+		height: 550px !important;
+	}
+	
+	.AnwendungenRect {
+		height: 280px !important;
+		top: 560px !important;
+	}
+	
+	.SmartphonesRect > p {
+		margin-top: 50% !important;
+	}
+
+	.InternetRect > p {
+		margin-top: 60% !important;
+	}
+
+	.SicherheitRect > p {
+		margin-top: 25% !important;
+	}
+
+	.GesundheitRect > p {
+		margin-top: 25% !important;
+	}
+
+	.SozialRect > p {
+		margin-top: 35% !important;
+	}
+
+	.AnwendungenRect > p {
+		margin-top: 25% !important;
+	}
+
+	.AllgemeinRect > p {
+		margin-top: 85% !important;
+
+	}
+	
+	.slideshow-container {
+		grid-area: slider;
+		grid-column: 1;
+		grid-row: 1;
+		border-radius: 15px;
+	}
+	
+	.thema {
+		font-size: 100px;
+	}
+	
+	.frage {
+		font-size: 48px;
+	}
+	
+	.person {
+		font-size: 40px;
+	}
+	
+	.anzahlFragen {
+		font-size: 30px;
+	}
+	
+	#closeSlideshow {
+		margin-top: 770px;
+		font-size: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	#openList, #closeList {
+		margin-top: 770px !important;
+		font-size: 20px !important;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		margin-left: 800px !important;
+	}
+	
+	.list {
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	
+	.list>h1 {
+		font-size: 70px !important;
+	}
+	
+	.list>p {
+		font-size: 20px;
+	}
+	
+
+	img {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 865px){
+	
+	#chart{
+		margin-top: 60px;
+		zoom: 75%;
+	}
+}
+
+@media (max-width: 800px){
+	
+	#chart{
+		margin-top: 90px;
+		zoom: 70%;
+	}
+}
+
+@media (max-width: 730px){
+	
+	#chart{
+		margin-top: 20px;
+		zoom: 70%;
+		width: 95%;
+		
+		display: flex;
+	}
+	
+	#closeSlideshow{
+		margin-top: 900px !important;
+	}
+	
+	.grid-container { 
+		grid-template-rows: 970px;
+	}
+	
+	.numberQuestions {
+		visibility: hidden !important;
+		
+	}
+	
+	#rects>div {
+		height: 130px !important;
+		width: 100% !important;
+		left: 0;
+	}
+	
+	#rects>div>p {
+		position: absolute;
+		margin-top: 4% !important;
+		width: 100% !important;
+		left: 0;
+	}
+	
+	.SmartphonesRect {
+		border-top-right-radius: 15px;
+	}
+	
+	.InternetRect {
+		top: 140px !important;
+		border-radius: 0px !important;
+	}
+	
+	.SozialRect {
+		top: 280px !important;
+	}
+	
+	.AllgemeinRect {
+		top: 840px !important;
+		border-top-right-radius: 0px !important;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	
+	.SicherheitRect {
+		top: 560px !important;
+	}
+	
+	.GesundheitRect {
+		top: 700px !important;
+	}
+	
+	.AnwendungenRect {
+		top: 420px !important;
+		border-radius: 0px !important;
+	}
+	
+	#openList, #closeList {
+		visibility: hidden !important;
+	}
+	
+	.list {
+		visibility: hidden !important;
+	}
+}
+
+@media (max-width: 640px){
+  
+	.thema {
+		font-size: 60px;
+	}
+}
+
+/* media query for nav */
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+@media (max-width: 800px) {
+ 
+  nav ul{
+    position: fixed;
+    left: -100%;
+  }
+ 
+  nav ul li a{
+    margin-left: -100%;
+  }
+}

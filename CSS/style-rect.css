@@ -1,0 +1,168 @@
+/* rectangles */
+
+.SmartphonesRect {
+	position: absolute;
+	top: 0;
+	width: 310px;
+	height: 268px;
+	background-color: rgba(201, 162, 237, 1);
+	cursor: pointer;
+	border-top-left-radius: 15px;
+}
+
+.InternetRect {
+	position: absolute;
+	top: 278px;
+	width: 310px;
+	height: 380.5px;
+	background-color: rgba(173, 161, 251, 1);
+	cursor: pointer;
+	border-bottom-left-radius: 15px;
+}
+
+.SicherheitRect {
+	position: absolute;
+	top: 0px;
+	left: 320px;
+	width: 410px;
+	height: 220px;
+	background-color: rgba(117, 190, 202, 1);
+	cursor: pointer;
+}
+
+.AnwendungenRect {
+	position: absolute;
+	top: 458px;
+	left: 610px;
+	width: 410px;
+	height: 200.5px;
+	background-color: rgba(118, 185, 246, 1);
+	cursor: pointer;
+	border-bottom-right-radius: 15px;
+}
+
+.AllgemeinRect {
+	position: absolute;
+	top: 0;
+	left: 740px;
+	width: 280px;
+	height: 448px;
+	background-color: rgba(154, 235, 176, 1);
+	cursor: pointer;
+	border-top-right-radius: 15px;
+}
+
+
+.GesundheitRect {
+	position: absolute;
+	top: 228px;
+	left: 320px;
+	width: 410px;
+	height: 220px;
+	background-color: rgba(133, 214, 204, 1);
+	cursor: pointer;
+}
+
+.SozialRect {
+	position: absolute;
+	top: 458px;
+	left: 320px;
+	width: 280px;
+	height: 200.5px;
+	background-color: rgba(142, 159, 249, 1);
+	cursor: pointer;
+}
+
+/* text position for the topics */
+
+.SmartphonesRect > p {
+	margin-top: 35%;
+}
+
+.InternetRect > p {
+	margin-top: 50%;
+}
+
+.SicherheitRect > p {
+	margin-top: 20%;
+}
+
+.GesundheitRect > p {
+	margin-top: 20%;
+}
+
+.SozialRect > p {
+	margin-top: 25%;
+}
+
+.AnwendungenRect > p {
+	margin-top: 15%;
+}
+
+.AllgemeinRect > p {
+	margin-top: 70%;
+
+}
+
+.topicName {
+	font-size: 35px;
+	font-weight: 500;
+	cursor: pointer;
+	text-align: center;
+	color: #051730;
+} 
+
+/* total number of questions on each rectangle */
+.numberQuestions {
+	text-align: center;
+	font-weight: 500;
+	color: #051730;
+}
+
+/* hover effects for rectangles */
+
+#rects>div {
+   transition-duration: 0.3s;
+}
+
+.SmartphonesRect.hover:hover {
+	box-shadow: 0px 0px 15px rgba(201, 162, 237, 1);
+	background-color: rgba(201, 162, 237, 0.8) !important;
+	
+}
+
+.InternetRect.hover:hover {
+	box-shadow: 0px 0px 15px rgba(173, 161, 251, 1);
+	background-color: rgba(173, 161, 251, 0.8) !important;
+	
+}
+
+.SicherheitRect.hover:hover {
+	box-shadow: 0px 0px 15px rgba(117, 190, 202, 1);
+	background-color: rgba(117, 190, 202, 0.8) !important;
+	
+}
+
+.GesundheitRect.hover:hover{
+	box-shadow: 0px 0px 15px rgba(133, 214, 204, 1);
+	background-color: rgba(133, 214, 204, 0.8) !important;
+	
+}
+
+.SozialRect.hover:hover {
+	box-shadow: 0px 0px 15px rgba(142, 159, 249, 1);
+	background-color: rgba(142, 159, 249, 0.8) !important;
+	
+}
+
+.AllgemeinRect.hover:hover {
+	box-shadow: 0px 0px 15px rgba(154, 235, 176, 1);
+	background-color: rgba(154, 235, 176, 0.8) !important;
+	
+}
+
+.AnwendungenRect.hover:hover {
+	box-shadow: 0px 0px 12px rgba(194, 219, 248, 1);
+	background-color: rgba(118, 185, 246, 0.8) !important;
+	
+}

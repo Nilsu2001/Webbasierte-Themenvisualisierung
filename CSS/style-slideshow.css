@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* grid container for slideshow and image */
+
+.grid-container {
+	margin: auto;
+	width: 100%;
+	position: absolute;
+	height: 630px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 755.27px 264.88px;
+	grid-template-areas: slider image;
+	visibility: hidden;
+	opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+	
+}
+
+/*
+after click events
+display slideshows and lists as visible 
+*/
+
+#Smartphones-container.show, #Sicherheit-container.show, 
+#Internet-container.show, #Gesundheit-container.show,
+#Sozial-container.show, #Allgemein-container.show,
+#Anwendungen-container.show,
+#SmartphonesList.show, #SicherheitList.show,
+#InternetList.show, #GesundheitList.show,
+#SozialList.show, #AllgemeinList.show,
+#AnwendungenList.show
+{
+	pointer-events: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+/* slideshow image */
+
+img {
+	grid-area: image;
+	grid-column: 2;
+	grid-row: 1;
+	height: 658.5px;
+	display: inline-block;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px; 
+}
+
+/* slideshow container */
+
+.slideshow-container {
+  grid-area: slider;
+  grid-column: 1;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px; 
+}
+
+/* slides */
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  height: 600px;
+}
+
+/* next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -60px;
+  padding-top: 2px;
+  color: #051730;
+  font-size: 40px;
+  border-radius: 100%;
+  background-color: #FEFEFE;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.2);
+}
+
+.next {
+  right: 10px;
+  padding-left: 3px;
+}
+
+.prev {
+  left: 10px;
+  padding-right: 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #4B52AF;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* text content */
+
+.person {
+	font-size: 25px;
+	color: white;
+	border: solid 2px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	padding-bottom: 10px;
+}
+
+.frage {
+	font-size: 35px;
+	color: white;
+	padding-top: 1px;
+}
+
+.thema {
+	font-size: 80px;
+	margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #051730;
+}
+
+.person, .frage {
+	padding: 5px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+}
+
+.anzahlFragen{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.person, .frage, .thema, .anzahlFragen {
+	width: 90%;
+	margin-left: 30px;
+	margin-top: 15px;
+
+}
+
+/* button to go back to chart */
+
+#closeSlideshow {
+	position: absolute;
+	cursor: pointer;
+	color: #051730;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	background-color: #5CE1E6;
+	border: solid 4px transparent;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 30px;
+	margin-top: 600px;
+	box-shadow: 1px 2px 4px rgba(0,0,0,.2);
+}
+
+/* change background color of the buttons on hover */
+
+#closeSlideshow:hover, #openList:hover, #closeList:hover {
+	background-color: #4B52AF;
+    color: white;	
+	transition: all 0.3s ease-in-out;
+}
+
+/* color and image for each topic */
+
+#Smartphones, #SmartphonesList{
+	background-color: #D2BDE9;
+}
+#Smartphones+img{
+	content: url(images/smartphone.jpg);
+}
+
+#Internet, #InternetList {
+	background-color: #ADA1FB;
+}
+#Internet+img{
+	content: url(images/internet.jpg);
+}
+
+#Sicherheit, #SicherheitList {
+	background-color: rgba(117, 190, 202, 1);
+}
+#Sicherheit+img{
+	content: url(images/sicherheit.jpg);
+}
+
+#Gesundheit, #GesundheitList {
+	background-color: #85D6CC;
+}
+#Gesundheit+img{
+	content: url(images/gesundheit.jpg);
+}
+
+#Sozial, #SozialList {
+	background-color: #8E9FF9;
+}
+#Sozial+img{
+	content: url(images/sozial.jpg);
+}
+
+#Allgemein, #AllgemeinList {
+	background-color: #95E1A1;
+}
+#Allgemein+img{
+	content: url(images/allgemein.jpg);
+}
+
+#Anwendungen, #AnwendungenList {
+	background-color: #76B9F6;
+}
+#Anwendungen+img{
+	content: url(images/anwendungen.jpg);
+}
