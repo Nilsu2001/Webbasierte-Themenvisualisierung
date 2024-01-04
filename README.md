@@ -2,7 +2,7 @@
 
 ##### Hochschule Düsseldorf
 ##### Studiengang Medieninformatik
-##### Modul Informatikprojekt 1: webbasierte Themenvisualisierung
+##### Informatikprojekt 1: webbasierte Themenvisualisierung
 ##### Sommersemester 2022
 
 <hr />
